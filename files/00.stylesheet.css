@@ -1,5 +1,10 @@
 <style>
 
+/* Tried the import and its not bringing in the fonts
+@import "http://localhost:4567/fonts/Bebas.ttf?family=Bebas";
+@import "http://localhost:4567/fonts/Debby.ttf?family=Debby";
+*/
+
 @media print{@page {
     size: landscape;
     margin: 0mm;
@@ -8,29 +13,29 @@
 
 @font-face {
     font-family: "Debby";
-    src: url(Debby.ttf) format('truetype');
+    src: url(http://localhost:4567/fonts/Debby.ttf) format('truetype');
 }
 
 @font-face {
     font-family: "Lato1";
-    src: url(Lato/Lato-Black.ttf) format('truetype');
+    src: url(http://localhost:4567/fonts/Lato/Lato-Black.ttf) format('truetype');
 }
 
 @font-face {
     font-family: "Lato2";
-    src: url(Lato/Lato-Medium.ttf) format('truetype');
+    src: url(http://localhost:4567/fonts/Lato/Lato-Medium.ttf) format('truetype');
 }
-
+/*
 @font-face {
     font-family: "Bebas";
-    src: url(Bebas.ttf) format('truetype');
+    src: url(http://localhost:4567/fonts/http://localhost:4567/fonts/Bebas.ttf) format('truetype');
 }
-
+*/
 
 /* Fonts used Debby=cursive; Lato=regular Bebas=nutricircle; */
 h1 {
     text-align: center;
-    font-family: "Debby","Zapf Chancery",Cursive;
+    font-family: "Debby" //import not working
     font-size: 0.64in;
 }
 
@@ -153,7 +158,7 @@ li {
 }
 
 .column {
-    background: transparent url(NutritionBullet.png);
+    background: transparent url(http://localhost:4567/images/NutritionBullet.png);
     background-size: cover;
     position: relative;
     float: left;
