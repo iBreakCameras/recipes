@@ -30,9 +30,23 @@ function buildHTML() {
   // load the header file
   HTML += fs.readFileSync(files[1]);
   //testing out replacement
+  // insert files[0] the stylesheet into files[1] the head tag
   HTML = HTML.replace('{{stylesheet}}',styleSheetCode);
+  // concat the boilerplate aka introduction aka files[2]
   HTML += fs.readFileSync(files[2]);
-  HTML += fs.readFileSync(files[3]);
+  var recipeTemplate = fs.readFileSync(files[3]);
+  var recipe = ''; // recipe is the temporary customized recipe
+  // figure out how many recipes there are from firebase
+  // for now will just assume 6
+  var recipeCount = 6; 
+  for (var i = 0;i < recipeCount;i++) {
+    recipe = recipeTemplate.toString()
+    if (i == 0 || i == 1) {
+      recipe = recipe.replace(/{{divClass}}/,' class=recipe' + (i+1)) 
+      } else {recipe = recipe.replace(/{{divClass}}/,'') };
+    HTML += recipe; 
+  }
+  // concat the footer aka files[4] closing tags container / body and html 
   HTML += fs.readFileSync(files[4]);
   //testing out replacement
   HTML = HTML.replace('{{serves}}','hi there');
