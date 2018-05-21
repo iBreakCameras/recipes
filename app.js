@@ -1,10 +1,40 @@
-var http = require('http');
+#!/usr/bin/env node
 
-http.createServer(function(req, res){
-    res.writeHead(200, {'Content-type':'text/html'});
-      res.write(buildHTML());
-        res.end( );
-}).listen(7000);
+var express = require("express"),
+    app = express(),
+    bodyParser = require('body-parser'),
+    errorHandler = require('errorhandler'),
+    methodOverride = require('method-override'),
+    hostname = process.env.HOSTNAME || 'localhost',
+    port = parseInt(process.env.PORT, 10) || 7000,
+    publicDir = process.argv[2] || __dirname + '/public',
+    path = require('path');
+
+app.get('/', function (req, res) {
+  res.send(buildHTML());
+});
+
+app.post('/', function (req, res) {
+    console.log(req.body); /* or maybe req.params.bocy */
+    res.send(req.body);
+/*res.send(buildHTML());
+ * send back a pdf file OR
+ */
+});
+
+app.use(methodOverride());
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({
+  extended: true
+}));
+app.use(express.static(publicDir));
+app.use(errorHandler({
+  dumpExceptions: true,
+  showStack: true
+}));
+
+console.log("Simple static server showing %s listening at http://%s:%s", publicDir, hostname, port);
+app.listen(port, hostname);
 
 function buildHTML() {
   var HTML = '';
@@ -29,7 +59,6 @@ function buildHTML() {
   var styleSheetCode = fs.readFileSync(files[0]);
   // load the header file
   HTML += fs.readFileSync(files[1]);
-  //testing out replacement
   // insert files[0] the stylesheet into files[1] the head tag
   HTML = HTML.replace('{{stylesheet}}',styleSheetCode);
   // concat the boilerplate aka introduction aka files[2]
@@ -43,7 +72,7 @@ function buildHTML() {
     recipe = recipeTemplate.toString()
     if (i == 0 || i == 1) {
       recipe = recipe.replace(/{{divClass}}/,' class=recipe' + (i+1)) 
-      } else {recipe = recipe.replace(/{{divClass}}/,'') };
+      } else {recipe = recipe.replace(/{{divClass}}/,' class=recipe') };
     HTML += recipe; 
   }
   // concat the footer aka files[4] closing tags container / body and html 
