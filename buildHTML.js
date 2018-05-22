@@ -1,7 +1,7 @@
 module.exports = function () {
   var fs = require('fs');
-  var recipeJSON = JSON.parse(require('./receiveJSON.js')());
-  console.log(recipeJSON['newRecipes']);
+  var recipesJSON = JSON.parse(require('./receiveJSON.js')());
+  var recipesArray = recipesJSON['newRecipes'];
   var HTML = ''; 
   // create variables for template files in an array
   var files =  [ './files/00.stylesheet.css'
@@ -32,13 +32,14 @@ module.exports = function () {
   var recipe = ''; // recipe is the temporary customized recipe
   // figure out how many recipes there are from firebase
   // for now will just assume 6
-  var recipeCount = 6;  
+  var recipeCount = recipesArray.length;  
   for (var i = 0;i < recipeCount;i++) {
     recipe = recipeTemplate.toString()
     if (i == 0 || i == 1) {
       recipe = recipe.replace(/{{divClass}}/,' class=recipe' + (i+1)) 
       } else {recipe = recipe.replace(/{{divClass}}/,' class=recipe') };
-    HTML += recipe; 
+    recipe = recipe.replace(/{{name}}/,recipesArray[i].name);
+    HTML += recipe;  
   }
   // concat the footer aka files[4] closing tags container / body and html 
   HTML += fs.readFileSync(files[4]);
