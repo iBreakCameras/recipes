@@ -1,5 +1,7 @@
 module.exports = function () {
   var fs = require('fs');
+  var recipeJSON = JSON.parse(require('./receiveJSON.js')());
+  console.log(recipeJSON['newRecipes']);
   var HTML = ''; 
   // create variables for template files in an array
   var files =  [ './files/00.stylesheet.css'

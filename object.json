@@ -1,0 +1,328 @@
+{
+	"id": "H10l-y2Rz",
+	"name": "",
+	"image": "",
+	"desc": "",
+	"location": 123,
+	"classType": "adsrw234r",
+	"date": "",
+	"privateClass": true,
+	"assembled": false,
+	"recipes": [
+		{
+			"amount": "1",
+			"name": "B179JYj3z",
+			"subUnit": ""
+		},
+		{
+			"amount": "12",
+			"name": "HJnZ9Fi3z",
+			"subUnit": ""
+		},
+		{
+			"amount": "6",
+			"name": "S171SKo3G",
+			"subUnit": ""
+		},
+		{
+			"amount": "10",
+			"name": "S171SKo3G",
+			"subUnit": ""
+		}
+	],
+	"newRecipes": [
+		{
+			"addiSeas": "garlic and ground ginger",
+			"calConsc": true,
+			"calories": "370",
+			"carbs": "21",
+			"category": "chicken",
+			"cookInst": "Contains 2 pounds chicken breast. Cook on low for 6-8 hours for regular family or 3-4 hours for small family. Add broccoli with 45-60 min left. Shred chicken and return to juice before serving.  ",
+			"desc": "A healthy twist on a Chinese favorite. ",
+			"diabetes": true,
+			"dietNotes": "",
+			"fiber": "3",
+			"grocList": "Brown Rice",
+			"heart": true,
+			"id": "B179JYj3z",
+			"image": "",
+			"ingredients": [
+				{
+					"amount": "2",
+					"name": "H1x-OfBdz",
+					"subUnit": "lbs"
+				},
+				{
+					"amount": "1",
+					"name": "HyFlC9KYf",
+					"subUnit": "item"
+				},
+				{
+					"amount": "1",
+					"name": "rygivfBuz",
+					"subUnit": "cup"
+				},
+				{
+					"amount": "4",
+					"name": "rJ1OPMHuG",
+					"subUnit": "item"
+				},
+				{
+					"amount": "0.5",
+					"name": "Syp-n5KYf",
+					"subUnit": "can"
+				},
+				{
+					"amount": "0.5",
+					"name": "BJxTNjFKz",
+					"subUnit": "cup"
+				},
+				{
+					"amount": "3",
+					"name": "SJTvMotKM",
+					"subUnit": "tbsp"
+				},
+				{
+					"amount": "1",
+					"name": "BJ28DzB_z",
+					"subUnit": "tbsp"
+				},
+				{
+					"amount": "0.25",
+					"name": "rk-P4sKtM",
+					"subUnit": "cup"
+				},
+				{
+					"amount": "1",
+					"name": "B1sTAqKFG",
+					"subUnit": "tbsp"
+				},
+				{
+					"amount": "0.5",
+					"name": "Syg2R9FYG",
+					"subUnit": "tsp"
+				}
+			],
+			"name": "Cashew Chicken",
+			"nutritionNotes": "Nutrition facts are for the meal provided, any foods added must be calculated in for accuracy. Meat quantities reflect the Regular Family size meals",
+			"pressCookInst": "Add ~1 cup liquid. Cook 15-30 minutes on manual",
+			"protein": "40",
+			"satFat": "2",
+			"serveSuggestions": "Serve over brown rice. *1/3 cup cooked rice = 1 serving",
+			"servings": "6",
+			"sugar": "6",
+			"tfat": "12"
+		},
+		{
+			"addiSeas": "garlic, oregano, salt, pepper, and lemon zest",
+			"calConsc": true,
+			"calories": "284",
+			"carbs": "8",
+			"category": "chicken",
+			"cookInst": "Contains 2 pounds chicken breast. Cook on low 6-8 hours for regular family or 3-4 hours for small family. Add broccoli with 45-60 min left. Remove broccoli & chicken & shred chicken. Add cream cheese to liquid and stir. Add items back to liquid and allow to simmer 10-15 more minutes. ",
+			"desc": "Excellent flavor. Fresh, light and creamy. ",
+			"diabetes": true,
+			"dietNotes": "",
+			"fiber": "1",
+			"grocList": "Brown rice or whole wheat noodles, 8 oz low fat  or Greek cream cheese",
+			"heart": true,
+			"id": "HJnZ9Fi3z",
+			"image": "",
+			"ingredients": [
+				{
+					"amount": "2",
+					"name": "H1x-OfBdz",
+					"subUnit": "lbs"
+				},
+				{
+					"amount": "2",
+					"name": "SyMKGiYKf",
+					"subUnit": "item"
+				},
+				{
+					"amount": "1",
+					"name": "Syp-n5KYf",
+					"subUnit": "can"
+				},
+				{
+					"amount": "1",
+					"name": "rkM-AqYKz",
+					"subUnit": "item"
+				},
+				{
+					"amount": "0.5",
+					"name": "ryxsmitFz",
+					"subUnit": "tsp"
+				},
+				{
+					"amount": "2",
+					"name": "Syg2R9FYG",
+					"subUnit": "tsp"
+				},
+				{
+					"amount": "1",
+					"name": "r1XYXjFtM",
+					"subUnit": "tsp"
+				},
+				{
+					"amount": "3",
+					"name": "rk4LmiKKM",
+					"subUnit": "tbsp"
+				},
+				{
+					"amount": "1",
+					"name": "HJN5NsFFG",
+					"subUnit": "tsp"
+				},
+				{
+					"amount": "0.5",
+					"name": "HyVhXoKYz",
+					"subUnit": "tsp"
+				}
+			],
+			"name": "Creamy Lemon Chicken",
+			"nutritionNotes": "Nutrition facts include 8 oz low fat cream cheese and 16 oz bag broccoli. Any other foods added must be calculated in for accuracy. Meat quantities reflect the Regular Family size meals",
+			"pressCookInst": "Add ~1/2 cup liquid. Cook 15-30 minutes on manual",
+			"protein": "39",
+			"satFat": "5",
+			"serveSuggestions": "Serve over rice or noodles. *1/3 cup cooked pasta/rice = 1 serving",
+			"servings": "6",
+			"sugar": "3",
+			"tfat": "10"
+		},
+		{
+			"addiSeas": "garlic, oregano, salt and pepper",
+			"calConsc": true,
+			"calories": "288",
+			"carbs": "3",
+			"category": "chicken",
+			"cookInst": "Contains 3 pounds diced chicken breast. Cook on low for 6 hrs for regular family or 4 hours for small family. ",
+			"desc": "A naturally light, flavorful dish. Top with high protein Greek yogurt tzatziki sauce for added flavor.",
+			"diabetes": true,
+			"dietNotes": "",
+			"fiber": "0",
+			"grocList": "Whole wheat flat bread, tomato, red onion, feta cheese, cucumber, 1 c plain Greek yogurt, lemon juice, dried dill",
+			"heart": true,
+			"id": "S171SKo3G",
+			"image": "",
+			"ingredients": [
+				{
+					"amount": "3",
+					"name": "Bk4KwsVFf",
+					"subUnit": "lbs"
+				},
+				{
+					"amount": "1",
+					"name": "SyMKGiYKf",
+					"subUnit": "item"
+				},
+				{
+					"amount": "0.5",
+					"name": "Syp-n5KYf",
+					"subUnit": "can"
+				},
+				{
+					"amount": "2",
+					"name": "r1XYXjFtM",
+					"subUnit": "tsp"
+				},
+				{
+					"amount": "1",
+					"name": "rk4LmiKKM",
+					"subUnit": "cup"
+				},
+				{
+					"amount": "1",
+					"name": "HJN5NsFFG",
+					"subUnit": "tsp"
+				},
+				{
+					"amount": "0.5",
+					"name": "HyVhXoKYz",
+					"subUnit": "tsp"
+				},
+				{
+					"amount": "",
+					"name": "",
+					"subUnit": ""
+				}
+			],
+			"name": "Chicken Gyros",
+			"nutritionNotes": "Nutrition facts are for the meal provided, any foods added must be calculated in for accuracy. Meat quantities reflect the Regular Family size meals",
+			"pressCookInst": "Add ~1 cup liquid. Cook 15-30 minutes on manual",
+			"protein": "52",
+			"satFat": "2",
+			"serveSuggestions": "Serve on whole wheat flatbread with desired toppings and tzatziki sauce: 1 cup plain Greek yogurt, 1 tsp lemon juice, 1/2 cucumber peeled and chopped, 1 tsp dried dill",
+			"servings": "6",
+			"sugar": "1",
+			"tfat": "6"
+		},
+		{
+			"addiSeas": "garlic, oregano, salt and pepper",
+			"calConsc": true,
+			"calories": "288",
+			"carbs": "3",
+			"category": "chicken",
+			"cookInst": "Contains 3 pounds diced chicken breast. Cook on low for 6 hrs for regular family or 4 hours for small family. ",
+			"desc": "A naturally light, flavorful dish. Top with high protein Greek yogurt tzatziki sauce for added flavor.",
+			"diabetes": true,
+			"dietNotes": "",
+			"fiber": "0",
+			"grocList": "Whole wheat flat bread, tomato, red onion, feta cheese, cucumber, 1 c plain Greek yogurt, lemon juice, dried dill",
+			"heart": true,
+			"id": "S171SKo3G",
+			"image": "",
+			"ingredients": [
+				{
+					"amount": "3",
+					"name": "Bk4KwsVFf",
+					"subUnit": "lbs"
+				},
+				{
+					"amount": "1",
+					"name": "SyMKGiYKf",
+					"subUnit": "item"
+				},
+				{
+					"amount": "0.5",
+					"name": "Syp-n5KYf",
+					"subUnit": "can"
+				},
+				{
+					"amount": "2",
+					"name": "r1XYXjFtM",
+					"subUnit": "tsp"
+				},
+				{
+					"amount": "1",
+					"name": "rk4LmiKKM",
+					"subUnit": "cup"
+				},
+				{
+					"amount": "1",
+					"name": "HJN5NsFFG",
+					"subUnit": "tsp"
+				},
+				{
+					"amount": "0.5",
+					"name": "HyVhXoKYz",
+					"subUnit": "tsp"
+				},
+				{
+					"amount": "",
+					"name": "",
+					"subUnit": ""
+				}
+			],
+			"name": "Chicken Gyros",
+			"nutritionNotes": "Nutrition facts are for the meal provided, any foods added must be calculated in for accuracy. Meat quantities reflect the Regular Family size meals",
+			"pressCookInst": "Add ~1 cup liquid. Cook 15-30 minutes on manual",
+			"protein": "52",
+			"satFat": "2",
+			"serveSuggestions": "Serve on whole wheat flatbread with desired toppings and tzatziki sauce: 1 cup plain Greek yogurt, 1 tsp lemon juice, 1/2 cucumber peeled and chopped, 1 tsp dried dill",
+			"servings": "6",
+			"sugar": "1",
+			"tfat": "6"
+		}
+	]
+}
