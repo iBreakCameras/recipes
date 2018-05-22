@@ -24,7 +24,7 @@
 }
 
 @font-face {
-    font-family: "Bebas";
+    font-family: Bebas, courier, sans-serif;
     src: url(/fonts/Bebas.ttf) format('truetype');
 }
 
@@ -190,5 +190,26 @@ li {
     top: 31%;
 }
 
+.greyRows {
+    position: relative;
+}
+
+.heart {
+    position: relative;
+    bottom: 0%;
+    left: 0%;
+    font-family: Bebas;
+    color: #b6b6b6;
+    text-transform: uppercase;
+}
+/*
+.calCons {
+    position: relative;
+}
+
+.diabetes {
+    position: relative;
+}
+*/
 </style>
 
