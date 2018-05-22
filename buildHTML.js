@@ -1,8 +1,5 @@
 module.exports = function () {
   var fs = require('fs');
-  var recipeSetData = JSON.parse(fs.readFileSync('testobject.json'));
-  var recipeData = recipeSetData['newRecipes'];
-    
   var HTML = ''; 
   // create variables for template files in an array
   var files =  [ './files/00.stylesheet.css'
