@@ -9,16 +9,24 @@ var express = require("express"),
     port = parseInt(process.env.PORT, 10) || 7000,
     publicDir = process.argv[2] || __dirname + '/public',
     path = require('path'),
+    bodyParser = require('body-parser'),
     buildHTML = require('./buildHTML.js');
     ;
-
+/*
 app.get('/', function (req, res) {
   res.send(buildHTML());
 });
+*/
+//app.use(bodyParser); // <-- this didn't work
+app.use(bodyParser.json());
 
-app.post('/', function (req, res) {
-    console.log(req.body); /* or maybe req.params.bocy */
-    res.send(req.body);
+app.post('/returnPDF', function (req, res) {
+    var HTML = buildHTML(req.body); //req.body);
+    res.contentType('text/html');
+    res.send(HTML);
+    //res.send(Object.keys(req.body));
+    //res.contentType("application/pdf");
+    //res.send(req.body);
 /*res.send(buildHTML());
  * send back a pdf file OR
  */

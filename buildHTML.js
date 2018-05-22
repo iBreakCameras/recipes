@@ -1,6 +1,7 @@
-module.exports = function () {
+module.exports = function (jsonText) {
   var fs = require('fs');
-  var recipesJSON = JSON.parse(require('./receiveJSON.js')());
+//  if (!jsonText) { jsonText = fs.readFileSync('./object.json');}
+  var recipesJSON = jsonText;  //JSON.parse(jsonText);
   var recipesArray = recipesJSON['newRecipes'];
   var HTML = ''; 
   // create variables for template files in an array
