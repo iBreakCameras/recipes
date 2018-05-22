@@ -98,9 +98,13 @@ li {
     text-indent: 0.12in;
 }
 
-.strongerFlavor {
+.addiSeas {
     font-family: "Lato2",Arial,sans-serif;
     font-size: 0.13in;
+}
+
+.addiSeas::before {
+    content: 'If you desire stronger flavor, add these seasonings and stir ~1 hour before serving: ';
 }
 
 .nutritionNotes {
@@ -201,6 +205,10 @@ li {
     font-family: Bebas;
     color: #b6b6b6;
     text-transform: uppercase;
+}
+
+.heart::before {
+    content: 'heart health';
 }
 /*
 .calCons {
