@@ -20,7 +20,7 @@ app.get('/', function (req, res) {
 //app.use(bodyParser); // <-- this didn't work
 app.use(bodyParser.json());
 
-app.post('/returnPDF', function (req, res) {
+app.post('/', function (req, res) {
     var HTML = buildHTML(req.body); //req.body);
     res.contentType('text/html');
     res.send(HTML);
