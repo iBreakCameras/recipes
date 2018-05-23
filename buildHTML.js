@@ -1,6 +1,6 @@
 module.exports = function (jsonText) {
   var fs = require('fs');
-//  if (!jsonText) { jsonText = fs.readFileSync('./object.json');}
+  if (!jsonText) { jsonText = JSON.parse(fs.readFileSync('./object.json'));}
   var recipesJSON = jsonText;  //JSON.parse(jsonText);
   var recipesArray = recipesJSON['newRecipes'];
   var HTML = ''; 
@@ -51,8 +51,8 @@ module.exports = function (jsonText) {
     if (recipesArray[i].heart) {
     recipe = recipe.replace(/<!-- {{heart}} -->/,'<div class=heart></div>');
     } 
-    if (recipesArray[i].calCons) {
-    recipe = recipe.replace(/<!-- {{calCons}} -->/,'<div class=calCons></div>');
+    if (recipesArray[i].calConsc) {
+    recipe = recipe.replace(/<!-- {{calConsc}} -->/,'<div class=calConsc></div>');
     }
     if (recipesArray[i].diabetes) {
     recipe = recipe.replace(/<!-- {{diabetes}} -->/,'<div class=diabetes></div>');

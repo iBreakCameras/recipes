@@ -12,11 +12,11 @@ var express = require("express"),
     bodyParser = require('body-parser'),
     buildHTML = require('./buildHTML.js');
     ;
-/*
+
 app.get('/', function (req, res) {
   res.send(buildHTML());
 });
-*/
+
 //app.use(bodyParser); // <-- this didn't work
 app.use(bodyParser.json());
 

@@ -3,19 +3,24 @@
 After that it should just be "" i.e. just <div> as the CSS grid will take care of things.
 This is a hack to get the first two recipes to appear correctly on the first page next to the introdution aka boilerplate half page --> 
 
+<!-- {{heart}} -->
+<!-- {{calConsc}} -->
+<!-- {{diabetes}} -->
+
+
 <div class=recipeTitle>{{name}}</div>
 <span style="font-family:Debby;font-size:.20in">Serves:&nbsp;</span>{{servings}}
 <br>
 <div class=generalInstructions>{{cookInst}}</div>
-<span style="font-family:Debby;font-size:.20in">Pressure Cooker Instructions:&nbsp;</span>
-<span style="font-family:Lato2;font-size:.12in">{{pressCookInst}}
 <br>
-<span style="font-family:Debby;font-size:.20in">Shopping List:&nbsp;</span>
+<span style="font-family:Debby;font-size:.20in">&nbsp;&nbsp;Pressure Cooker Instructions:&nbsp;</span>
+<span style="font-family:Lato2;font-size:.12in">{{pressCookInst}}</span>
+<br>
+<span style="font-family:Debby;font-size:.20in">&nbsp;&nbsp;Shopping List:&nbsp;</span>
 <span style="font-family:Lato2;font-size:.12in">{{grocList}}</span>
 <br>
-<span style="font-family:Debby;font-size:.20in">Serving Suggestions: </span>
+<span style="font-family:Debby;font-size:.20in">&nbsp;&nbsp;Serving Suggestions: </span>
 <span style="font-family:Lato2;font-size:.12in">{{serveSuggestions}}</span>
-<br>
 <br>
 <br>
 <div class=addiSeas>{{addiSeas}}</div>
@@ -64,11 +69,6 @@ This is a hack to get the first two recipes to appear correctly on the first pag
 
 <div class=nutritionNotes>*{{nutritionNotes}}*</div>
 <div class=divider><center><img height=6px width=95% src=/images/divider.png></center></div>
-
-<!-- {{heart}} -->
-<!-- {{calCons}} -->
-<!-- {{diabetes}} -->
-
 </div>
 <!-- End Recipe-->
 

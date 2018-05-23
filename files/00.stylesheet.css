@@ -45,7 +45,7 @@ h3 {
     text-align: left;
     font-family: "Debby","Zapf Chancery",Cursive;
     font-size: 0.18in;
-    text-indent: 0.10in;
+    text-indent: 0.12in;
     float: left
 }
 
@@ -94,8 +94,9 @@ li {
 
 .generalInstructions {
     font-family: "Lato2",Arial,sans-serif;
-    font-size: 0.12in;
+    font-size: 0.14in;
     text-indent: 0.12in;
+    padding-bottom: 0.12;
 }
 
 .addiSeas {
@@ -135,7 +136,7 @@ li {
     box-sizing: border-box;
     grid-column: 2 / 3;
     grid-row: 1 / 2;
-    padding: 2px;
+    padding: 0.10in;
     border: 1px solid black;
 }
 
@@ -144,13 +145,14 @@ li {
     box-sizing: border-box;
     grid-column: 2 / 3;
     grid-row: 2 / 3;
-    padding: 2px;
+    padding: 0.10in;
     border: 1px solid black;
 }
 
 .recipe {
+    position: relative; 
     box-sizing: border-box;
-    padding: 2px;
+    padding: 0.10in;
     border: 1px solid black;
 }
 
@@ -164,7 +166,7 @@ li {
 
 .dividerRecipe {
     position: absolute;
-    top: 0in;
+    bottom: 0;
 }
 
 .column {
@@ -203,21 +205,53 @@ li {
     bottom: 0%;
     left: 0%;
     font-family: Bebas;
+    font-size: 0.14in;
     color: #b6b6b6;
     text-transform: uppercase;
+    float: right;
+    top: 0;
+    right: 0;
+    clear: both;
 }
 
 .heart::before {
     content: 'heart health';
-}
-/*
-.calCons {
+    }
+
+.calConsc {
     position: relative;
+    bottom: 0%;
+    left: 0%;
+    font-family: Bebas;
+    font-size: 0.14in;
+    color: #b6b6b6;
+    text-transform: uppercase;
+    float: right;
+    top: 0;
+    right: 0;
+    clear: both;
 }
+
+.calConsc::before {
+    content: 'calorie conscious';
+}
+
 
 .diabetes {
     position: relative;
+    bottom: 0%;
+    left: 0%;
+    font-family: Bebas;
+    font-size: 0.14in;
+    color: #b6b6b6;
+    text-transform: uppercase;
+    float: right;
+    clear: both;
 }
-*/
+
+.diabetes::before {
+    content: 'diabetes friendly';
+}
+
 </style>
 
